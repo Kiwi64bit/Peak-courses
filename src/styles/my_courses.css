@@ -1,0 +1,32 @@
+main>.container {
+    padding: var(--spacing6) 0;
+}
+
+.table-container {
+    padding: var(--spacing5) 0;
+}
+
+.circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-color);
+    color: #000000;
+    width: 2rem;
+    aspect-ratio: 1 / 1;
+    border-radius: 50rem;
+    box-shadow: -3px 3px var(--shadow-color);
+}
+
+table tbody .notes {
+    max-width: 30rem;
+    font-size: var(--fs6);
+}
+
+table tbody tr {
+    transition: translate ease 0.15s;
+}
+
+table tbody tr:hover {
+    translate: 6px 0;
+}

@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Add Courses</title>
+        <link rel="stylesheet" href="../styles/global.css" />
+        <link rel="stylesheet" href="../styles/add_courses.css" />
+    </head>
+    <body>
+        <header>
+            <nav class="navbar">
+                <div class="container">
+                    <a href="#" class="navbar-brand">Peak</a>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="../../index.html" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="my_courses.html" class="nav-link">My Courses</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="add_course.html" class="nav-link active">Add Courses</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contact_us.html" class="nav-link">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <div class="container">
+                <h1 class="text-center">My Courses</h1>
+
+                <svg class="center" height="10" viewBox="0 0 250 10" preserveAspectRatio="none">
+                    <path
+                        d="M 5 5 Q 60 2, 120 5 T 250 5"
+                        stroke="#D4A577"
+                        stroke-width="2.5"
+                        fill="none"
+                        stroke-linecap="round"></path>
+                </svg>
+
+                <div class="form-container">
+                    <form action="" class="margin-x-auto">
+                        <div class="input-groupe">
+                            <label for="courseName"> Course Name* </label>
+                            <input
+                                name="courseName"
+                                id="courseName"
+                                type="text"
+                                placeholder="e.g., Computer Vision"
+                                required />
+                        </div>
+                        <div class="input-groupe">
+                            <label for="instructor"> Instructor* </label>
+                            <input
+                                name="instructor"
+                                id="instructor"
+                                type="text"
+                                placeholder="e.g., Ahmed Nasser"
+                                required />
+                        </div>
+                        <div class="input-groupe">
+                            <label for="cridetHours"> Credit Hours* </label>
+                            <input name="creditHours" id="cridetHours" type="text" placeholder="e.g., 3" required />
+                        </div>
+                        <div class="input-groupe">
+                            <label for="notes"> Notes </label>
+                            <textarea
+                                name="notes"
+                                id="notes"
+                                rows="5"
+                                placeholder="e.g., Prerequisite: None"></textarea>
+                        </div>
+
+                        <button class="cta" type="submit">Add Course</button>
+                    </form>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="container">
+                <p class="title">Peak Courses Catalog System</p>
+                <p class="description">Organizing your academic journey, one course at a time</p>
+                <div class="credit">@ 2026 Peak Courses • Made by Kiwi64bit</div>
+            </div>
+        </footer>
+    </body>
+</html>
