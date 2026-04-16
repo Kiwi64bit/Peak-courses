@@ -3,7 +3,8 @@ main>.container {
 }
 
 .table-container {
-    padding: var(--spacing5) 0;
+    padding: var(--spacing5) var(--spacing2);
+    overflow-x: auto;
 }
 
 .circle {
