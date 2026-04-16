@@ -260,27 +260,27 @@ footer .title {
     transition: grid-template-rows 0.5s ease;
 }
 
-.navbar .navbar-toggler:focus~.navbar-collapse {
+.navbar .navbar-toggler-checkbox:checked~.navbar-collapse {
     grid-template-rows: 1fr;
 }
 
-.navbar .navbar-toggler:focus~.navbar-collapse .navbar-nav {
+.navbar .navbar-toggler-checkbox:checked~.navbar-collapse .navbar-nav {
     padding: var(--spacing4) 0;
 }
 
 .navbar .navbar-toggler {
     display: flex;
-    font-size: calc(2rem + 0.5vw);
-    color: var(--text-light);
+    color: var(--text-color);
     background: transparent;
     padding: 0.25rem 0.5rem;
-    border: 2px solid var(--primary);
-    border-radius: 0.5rem;
+    border: none;
     cursor: pointer;
+    margin: 0;
 }
 
 .navbar .navbar-toggler .icon {
-    display: flex;
+    width: 2.5rem;
+    height: 2.5rem;
 }
 
 .navbar>.container {
