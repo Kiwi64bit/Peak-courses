@@ -1,0 +1,7 @@
+main>.container {
+    padding: var(--spacing6) 0;
+}
+
+.form-container {
+    padding: var(--spacing5) 0;
+}
