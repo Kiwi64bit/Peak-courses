@@ -21,8 +21,6 @@
     --shadow-color: hsla(0, 0%, 0%, 0.8);
     --ff1: "Fredericka the Great", serif;
     --ff2: "Lato", sans-serif;
-    --ff3: Caveat, cursive;
-    --ff4: Kalam, cursive;
     --spacing1: 0.25rem;
     --spacing2: 0.5rem;
     --spacing3: 0.75rem;
@@ -47,6 +45,7 @@ body {
     font-family: var(--ff2);
     background-color: var(--base-color);
     color: var(--text-color);
+    scroll-behavior: smooth ;
 }
 
 h1,
@@ -125,9 +124,10 @@ table {
     --td-text-color2: #7a6b5d;
     --row-border: 2px dashed var(--row-border-color);
     background-color: var(--table-bg);
-    /* border: 2px solid var(--table-border); */
     border-radius: var(--table-border-radius);
     border-spacing: 0px;
+    width: 100%;
+    max-width: 100rem;
     overflow: hidden;
     box-shadow: -6px 6px 0px var(--shadow-color);
 }
@@ -182,7 +182,6 @@ form {
     --form-text-color: #6d5b3d;
     display: flex;
     flex-direction: column;
-    /* font-family: var(--ff3); */
     padding: var(--spacing6);
     background-color: var(--form-bg);
     border-radius: var(--form-border-radius);
