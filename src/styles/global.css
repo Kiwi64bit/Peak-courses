@@ -45,7 +45,7 @@ body {
     font-family: var(--ff2);
     background-color: var(--base-color);
     color: var(--text-color);
-    scroll-behavior: smooth ;
+    scroll-behavior: smooth;
 }
 
 h1,
@@ -246,8 +246,41 @@ footer .title {
 
 .navbar {
     display: flex;
-    flex-wrap: nowrap;
     position: relative;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-collapse {
+    flex: 1 0 100%;
+    border-radius: 0.25rem;
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.5s ease;
+}
+
+.navbar .navbar-toggler:focus~.navbar-collapse {
+    grid-template-rows: 1fr;
+}
+
+.navbar .navbar-toggler:focus~.navbar-collapse .navbar-nav {
+    padding: var(--spacing4) 0;
+}
+
+.navbar .navbar-toggler {
+    display: flex;
+    font-size: calc(2rem + 0.5vw);
+    color: var(--text-light);
+    background: transparent;
+    padding: 0.25rem 0.5rem;
+    border: 2px solid var(--primary);
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.navbar .navbar-toggler .icon {
+    display: flex;
 }
 
 .navbar>.container {
@@ -269,8 +302,12 @@ footer .title {
 
 .navbar .navbar-nav {
     display: flex;
-    gap: var(--spacing2);
+    gap: var(--spacing6);
+    flex-direction: column;
     list-style: none;
+    align-items: center;
+    overflow: hidden;
+    transition: padding 0.5s ease;
 }
 
 .navbar .navbar-nav .nav-link {
@@ -302,6 +339,26 @@ footer .title {
 .navbar .navbar-nav .nav-link.active::before,
 .navbar .navbar-nav .nav-link:hover::before {
     background-color: var(--shadow-color);
+}
+
+@media (min-width: 768px) {
+    .navbar .navbar-collapse {
+        grid-template-rows: 1fr;
+        flex: 0 0 auto;
+        background-color: transparent;
+        overflow: visible;
+    }
+
+    .navbar .navbar-toggler {
+        display: none;
+    }
+
+    .navbar .navbar-nav {
+        flex-direction: row;
+        gap: var(--spacing3);
+        padding: 0;
+        overflow: visible;
+    }
 }
 
 .img-fluid {
